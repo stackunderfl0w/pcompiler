@@ -1,0 +1,82 @@
+
+//comment
+
+//i32 main(i32 in)
+//    i32 fx:=12
+//    if fx<100
+//        fx:=fx+20
+//    fx:=13
+//    while fx<100
+//        fx:=fx+1
+//    return fx
+
+//program to calculate factorials
+i32 factorial(i32 in)
+    i32 fact:=in
+    i32 result:=1
+    while fact>1
+        result:=result*fact
+        fact:=fact-1
+    return result
+
+i32 arr_test(i32 in)
+    i32 arr[10]
+    i32 i:=0
+    while i<10
+        arr[i]:=i
+        i:=i+1
+    return arr[2]
+
+i32 break_test(i32 in)
+    i32 i:=0
+    while 1>0
+        i:=i+1
+        if i==10
+            break
+            i:=20
+    return i
+
+i32 inc_test(i32 in)
+    i32 i:=0
+    i32 arr[10]
+    while i<1000000000
+        arr[i%10]:=i
+        i:=i+1
+    return i
+
+i32 cond_test(i32 in)
+    i32 c:=in
+    i32 res
+    if c==0
+        res:=1
+    elif c==1
+        res:=2
+    elif c==2
+        res:=3
+    else
+        res:=4
+    return res
+
+
+i32 nest_test(i32 var)
+    i32 res:=3
+    if var<2
+        while res<100
+            while res<100
+                res:=res*2
+    return res
+
+
+i32 square(i32 in)
+    return in*in
+
+i32 arg_test(i32 a1 i32 a2)
+    i32 v:=a1+a2
+    return  inc_test(v)
+
+i32 fib(i32 f)
+    if f==0
+        return 0
+    if f==1
+        return 1
+    return fib(f-1)+fib(f-2)

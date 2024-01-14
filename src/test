@@ -1,0 +1,5 @@
+//test comment
+
+int main(u64 input){
+    u32 var := 27
+}

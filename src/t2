@@ -1,0 +1,34 @@
+i32 cond_test(i32 var)
+    i32 res:=3
+    if var<2
+        while res<100
+            while res<100
+                res:=res*2
+    res++
+    return ++res
+
+i32 x
+
+i32 type_test(i32 var)
+    i32 ivar:=2
+    f32 fvar:=3.5
+    fvar:= fvar*f32(ivar)
+    ivar:=i32(fvar)
+    return ivar
+
+i32 no_args()
+    return 1
+i32 float_arg(f32 a1)
+    return 1
+
+
+
+i32 fcall_test()
+    f32 a:=5.0
+    i32 h:=0xff
+    return float_arg(a)
+
+f32 float_return(f32 f)
+    return f*2.7
+i32 float_convert_test(f32 f)
+    return i32(float_return(f)*2.5)
